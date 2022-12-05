@@ -36,7 +36,7 @@ for(i=0;i<objects.length;i++){
 document.getElementById("num_obj").innerHTML="Number of objects detected are:"+objects.length;
 fill("black");
 stroke("red");
-percent=floor(obects[i].confidence*100);
+percent=floor(objects[i].confidence*100);
 text(objects[i].lable+" "+percent+"%",objects[i].x+15,objects[i].y+15);
 nofill()
 rect(objects[i].x,objects[i].y,objects[i].width,objects[i].height);
